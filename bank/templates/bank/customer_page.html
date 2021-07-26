@@ -1,0 +1,6 @@
+{% extends "bank/base.html" %}
+{% block content %}
+    {% if person in user.people.all %}
+	    <p>{{person.name}}</p>
+    {% endif %}
+{% endblock content %}

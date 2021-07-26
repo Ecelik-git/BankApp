@@ -1,0 +1,12 @@
+{% extends "bank/base.html" %}
+{% block content %}
+    <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ object.person.profile.image.url }}">
+      <div class="media-body">
+        <div class="article-metadata">
+          <h3><a class="mr-2" href="#">Welcome back {{ object.name }}!</a></h3>
+        </div>
+        <h5><a class="article-title" href="#">You have ${{ object.balance }} in your account</a></h5>
+      </div>
+    </article>
+{% endblock content %}
